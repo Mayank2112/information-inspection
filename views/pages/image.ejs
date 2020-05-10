@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Title  -->
+  <title>Information Inspection</title>
+
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="classy-nav.min.css">
+  <link rel="stylesheet" href="core-style.css">
+  <link rel="stylesheet" href="core-style.css.map">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="nice-select.css">
+  <link rel="stylesheet" href="owl.carousel.css">
+
+  <link rel="stylesheet" href="_mixin.scss">
+  <link rel="stylesheet" href="_responsive.scss">
+  <link rel="stylesheet" href="_constiables.scss">
+  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="_theme_color.scss">
+
+  <link rel="stylesheet" href="css/core-style.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="css/core-style.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <script type="text/javascript" src="qrcode.js">
+
+  </script>
+
+</head>
+
+<body>
+  <!-- Search Wrapper Area Start -->
+  <div class="search-wrapper section-padding-100">
+    <div class="search-close">
+      <i class="fa fa-close" aria-hidden="true"></i>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="search-content">
+            <form action="#" method="get">
+              <input type="search" name="search" id="search" placeholder="Type your keyword...">
+              <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Search Wrapper Area End -->
+
+  <!-- ##### Main Content Wrapper Start ##### -->
+  <div class="main-content-wrapper d-flex clearfix">
+
+    <!-- Mobile Nav (max width 767px)-->
+    <div class="mobile-nav">
+      <!-- Navbar Brand -->
+      <div class="amado-navbar-brand">
+        <a href="home"><img src="img/core-img/logo.png" alt=""></a>
+      </div>
+      <!-- Navbar Toggler -->
+      <div class="amado-navbar-toggler">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area clearfix">
+      <!-- Close Icon -->
+      <div class="nav-close">
+        <i class="fa fa-close" aria-hidden="true"></i>
+      </div>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="home"><img src="logo.png" alt=""></a>
+      </div>
+      <!-- Amado Nav -->
+      <nav class="amado-nav">
+        <ul>
+          <li><a href="home">Home</a></li>
+          <li><a href="track">Track</a></li>
+          <li><a href="warranty">Warranty</a></li>
+          <li><a href="append">Append</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Area End -->
+
+    <div class="cart-table-area section-padding-100">
+      <div class="container-fluid">
+        <div style="padding-left: 720px">
+        </div>
+        <div>
+          <% if(messageHolder.message.warranty){ %>
+          <h5 style="padding-top: 100px;">
+            Warranty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <%- messageHolder.message.warranty %>
+            years
+          </h5><br><% } else {%>
+          <h5 style="padding-top: 100px;">
+            Company Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <%- messageHolder.message.companyName %>
+          </h5><br>
+          <h5>
+            Product ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+            <%- messageHolder.message.P_ID %>
+          </h5><br>
+          <h5>
+            Product Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <%- messageHolder.message.name %>
+          </h5><br>
+          <h5>
+            Manufacturing Date : <%- messageHolder.message.manufacturingDate %>
+          </h5><br>
+          <h5>
+            Expiry Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+            <%- messageHolder.message.expiryDate %>
+          </h5><br>
+          <h5>
+            Stage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            : <%- messageHolder.message.stage %>
+          </h5><% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ##### Main Content Wrapper End ##### -->
+
+  <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+  <script src="js/jquery/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Plugins js -->
+  <script src="js/plugins.js"></script>
+  <!-- Active js -->
+  <script src="js/active.js"></script>
+
+</body>
+
+</html>
